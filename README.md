@@ -22,16 +22,32 @@ This atrocious lack of open data for language scholars is unacceptable, and a fi
 
 ## Use Cases
 ### Studying Subtitles in VLC
+It should be possible to supplement subtitles with glosses, and navigate them with a plugin. This should be a community effort, but it is currently not possible to build such a thing in an acceptable manner because of a the lack of a shared representation scheme for these glosses. The video usecase requires fundamentally different software from reading a text, but the underlying data that must be traversed by the viewer's attention is the same. FluentU provides a commercial example of such software for video, but it is not possible for a community or individual to use the software to study content of their own choosing. 
 ### Reading Project Gutenberg Texts in their Original Language
+Project Gutenberg provides an inexhaustible library of the highest quality written works in many languages, for free. But integrating materials such as wordreference, forvo, and example sentence archives is fraught with copyright problems and, again, would be difficult to achieve in a community because of a lack of standards for representing the relationship between reference materials 
 ### Custom Children's Books on Mobile Devices
+Lighter-weight software for more casual use could easily be created over the same datasets
 
 ## Major Patterns
 ### Word Gloss
-### Phrase Gloss
+A format for reporting on the meaning of a single word, in-context. This is most similar to a typical dictionary entry, but should include a description of how this word is used in the context in which its gloss is invoked.
 ### Word Report
+Supplement and deeper level of word gloss. Would give the word's etymology, synonyms, other appearances in this text and similar texts, usage information, link to or include a part of speech gloss, and give grammatical supplementation _in situ_.
+### Phrase Gloss
+Similar to a word gloss, but covers a set phrase that may include multiple words. Useful for idioms or grammatically ambiguous but frequently used collections of words.
 ### Etymology
+Etymology should include an account of the word's origins and changing usages over time. Google's etymology tree is not acceptable or useful in almost any context. Etymonline is a better prototype for an etymology format. Examples of usage over time could also be included using project gutenberg and internet archive texts. 
 ### Word pronunciation
+Forvo.com has the data, but it is not easy to link to it in a "pull-based" paradigm due to licensing. FluentU provides an excellent interface for reviewing pronunciations in-context, but their data and software are monolithically fused, unlicensable, and commercially blocked.
 ### Sentence Pronunciation
+Pronunciation of entire sentences can be provided by a community if the data standards existed. It is also possible to extract them from sources such as librivox, but the quality is low and standards would be needed to describe this relationship.
 ### Part of Speech Gloss
+The expert-verified part of speech of every word should be given, with an explanation of how its part of speech can be inferred from its morphology and context. Any necessary grammatical supplment, such as a verb conjugation table, should be given for additional reference.
 ### Grammatical Supplement
+Tables and transformation rules for verbs, inflection tables for nouns, and explanations for how these tables apply in the exact context in which they are invoked should be provided.
+### Points of Grammatical Interest
+Occasionally, it is necessary to provide a wider view of an aspect of a passage encompassing multiple disparate phrases, such as the use of a subjective inflection based on a previous clause, or of instances of shaded bracketing negation in French. These "points of interest" should be available in a layer of information parallel to the other, more granular gloss patterns.
+### Points of Cultural Interest
+Occasionally, words, idioms, or syntactical conventions such as poetic forms or songs require more protracted information. This can simply be a paragraph or links to other resources (video, etc.). 
 ### Navigation Structure
+All particles of the gloss must be connected to one another in a navigational structure so that there is always a "next", "previous", "deeper", "shallower", "pivot", and "branch" operation such as could be traversed eyes-free (with no visible interface elements such as buttons, links, or sliders, whatsoever) with a game controller or other eyes-free hardware device. A mouse must be completely unnecessary to navigate the content. Thus, the gloss must include this connective information in a graph or multiply-linked list. This aspect will be expanded upon elsewhere. 
