@@ -27,7 +27,9 @@ It should be possible to supplement subtitles with glosses, and navigate them wi
 Project Gutenberg provides an inexhaustible library of the highest quality written works in many languages, for free. But integrating materials such as wordreference, forvo, and example sentence archives is fraught with copyright problems and, again, would be difficult to achieve in a community because of a lack of standards for representing the relationship between reference materials 
 ### Custom Children's Books on Mobile Devices
 Lighter-weight software for more casual use could easily be created over the same datasets
-
+## Technical Details
+### Serialisation
+OpenGloss graphs are distributed as JSON-LD serialisations with the `type` `gloss`. If they are accessed on a static file system, they are saved with the file extension `.ogloss`. OpenGloss graphs are serialised as an adjacency list, and graphs are recontructed as necessary by the consuming software. 
 ## Major Patterns
 ### Word Gloss
 A format for reporting on the meaning of a single word, in-context. This is most similar to a typical dictionary entry, but should include a description of how this word is used in the context in which its gloss is invoked.
