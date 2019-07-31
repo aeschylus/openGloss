@@ -51,3 +51,7 @@ Occasionally, it is necessary to provide a wider view of an aspect of a passage 
 Occasionally, words, idioms, or syntactical conventions such as poetic forms or songs require more protracted information. This can simply be a paragraph or links to other resources (video, etc.). 
 ### Navigation Structure
 All particles of the gloss must be connected to one another in a navigational structure so that there is always a "next", "previous", "deeper", "shallower", "pivot", and "branch" operation such as could be traversed eyes-free (with no visible interface elements such as buttons, links, or sliders, whatsoever) with a game controller or other eyes-free hardware device. A mouse must be completely unnecessary to navigate the content. Thus, the gloss must include this connective information in a graph or multiply-linked list. This aspect will be expanded upon elsewhere. 
+
+## Other Criteria
+### Graph Segmentation
+### Open to Addition
